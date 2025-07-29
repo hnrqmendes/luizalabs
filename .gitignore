@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# System files
+*.db
+uploads
+
+# Swagger generated files não foram inseridos para facilitar a execução
