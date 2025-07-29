@@ -67,14 +67,14 @@ export function router(req: IncomingMessage, res: ServerResponse) {
      *         required: false
      *         schema:
      *           type: integer
-     *           example: 20210101
+     *           example: 20210303
      *         description: Data inicial no formato YYYYMMDD
      *       - in: query
      *         name: dateEnd
      *         required: false
      *         schema:
      *           type: integer
-     *           example: 20210103
+     *           example: 20210305
      *         description: Data final no formato YYYYMMDD
      *     responses:
      *       200:

@@ -32,6 +32,8 @@ npm run dev
 Por padrão a porta de execução é a 3000, mas pode ser definida no .env
 A documentação com o swagger estará em execução no endpoint http://localhost:{PORT}/docs
 
+### 4. Para executar testes:
+npm run test
 ---
 
 ## 🛠 Tecnologias Utilizadas
