@@ -51,25 +51,31 @@ A documentação com o swagger estará em execução no endpoint http://localhos
 
 O projeto segue uma estrutura modular baseada na separação de responsabilidades, facilitando a manutenção e a escalabilidade da aplicação:
 
-### 🔹 controller/
+### 🔹 src/controller/
 Contém os tratamentos de rotas após serem identificadas no router. Nenhuma lógica de negócio pesada é tratada nesse nível.
 
-### 🔹 service/
+### 🔹 src/service/
 Camada onde está a lógica de negócio. Centraliza o processamento, leitura e transformação dos dados. Pode ser chamado tanto pelo controller, quanto pelo router, a depender do tipo de tratamento exigido.
 
-### 🔹 config/
+### 🔹 src/config/
 Responsável por configurações globais da aplicação, como de variáveis de ambiente e de documentação.
 
-### 🔹 type/
+### 🔹 src/type/
 Define os tipos de dados usados em todo o projeto.
 
-### 🔹 upload/
-Contém os arquivos que tiveram o upload feito.
+### 🔹 src/uploads/
+Contém os arquivos que tiveram o upload feito. Só é criado após o primeiro upload
 
-### 🔹 util/
+### 🔹 src/util/
 Funções auxiliares e genéricas que não pertencem a nenhuma camada específica de negócio.
 
 ### 🔹 test/
 Armazena os testes automatizados da aplicação, organizados por funcionalidade. Garante que os módulos funcionem corretamente e serve como uma rede de segurança para futuras mudanças.
+
+### 🔹 __mocks__/
+Mocks para execução dos testes
+
+### 🔹 public/
+Arquivos públicos, inicialmente do swagger
 
 ---
